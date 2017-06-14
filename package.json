@@ -1,5 +1,7 @@
 {
   "name": "static-app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.4.2"
+  }
 }

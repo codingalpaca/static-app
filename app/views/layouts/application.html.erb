@@ -9,6 +9,31 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="nav has-shadow">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item">
+            <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+          </a>
+          <a href="/" class="nav-item is-tab is-hidden-mobile is-active">Home</a>
+          <a href="/about" class="nav-item is-tab is-hidden-mobile">About</a>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+          <a href="/" class="nav-item is-tab is-hidden-tablet is-active">Home</a>
+          <a href="/about" class="nav-item is-tab is-hidden-tablet">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
   </body>
 </html>
